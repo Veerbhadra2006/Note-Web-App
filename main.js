@@ -36,8 +36,8 @@ saveBtn.addEventListener("click", function () {
           <h2>${heading || "Untitled"}</h2>
           <p style="display: none;">${noteText}</p>
           <div class="left-option">
-            <img class="open" src="/view.svg" alt="open note">
-            <img class="delete" src="/trash.svg" alt="delete note">
+            <img class="open" src="images/view.svg" alt="open note">
+            <img class="delete" src="images/trash.svg" alt="delete note">
           </div>
         </div>
       </div>
