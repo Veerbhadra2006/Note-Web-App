@@ -1,0 +1,157 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+}
+
+.left {
+    height: 95%;
+    width: 30%;
+    background-color: rgb(27, 25, 25);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    overflow: auto;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.left-option {
+    display: flex;
+    gap: 25px;
+}
+
+.left img {
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.left img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #008080);
+    transition: 1s ease;
+}
+
+.right {
+    height: 95%;
+    width: 67%;
+    background-color: rgb(27, 25, 25);
+    margin: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+h1 {
+    color: white;
+}
+
+.notes {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 25, 25);
+    position: relative;
+    flex-direction: column;
+}
+
+.heading {
+    position: absolute;
+    top: 1px;
+    width: 99%;
+    background-color: burlywood;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1px;
+    border-radius: 10px;
+}
+
+.heading img {
+    transition: 1s ease;
+}
+
+.heading img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #008080);
+    transition: 1s ease;
+}
+
+#textarea {
+    width: 65%;
+    height: 83vh;
+    color: white;
+    background-color: rgb(83, 56, 56);
+    resize: none;
+    border: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    top: 72px;
+}
+
+.head {
+    background-color: burlywood;
+    height: 2rem;
+    color: black;
+    width: 20rem;
+    padding: 0 20px;
+    border-style: none;
+}
+
+.add-btn {
+    position: absolute;
+    width: 99%;
+    background-color: burlywood;
+    height: 3rem;
+    bottom: 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn img {
+    transition: 1s ease;
+}
+
+.add-btn img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #008080);
+    transition: 1s ease;
+}
+
+.note-name {
+    height: 5rem;
+    background-color: burlywood;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.note-name h2 {
+    white-space: nowrap;
+    /* Text ko ek line mein rakhne ke liye */
+    overflow: hidden;
+    /* Extra text ko hide karne ke liye */
+    text-overflow: ellipsis;
+    /* Overflow text ke liye "..." dikhane ke liye*/
+    width: 100%;
+    /* Ensure that it doesn't exceed container width */
+    display: inline-block;
+    /* Inline-block to handle width and ellipsis properly */
+}
